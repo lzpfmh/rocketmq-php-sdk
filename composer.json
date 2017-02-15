@@ -3,11 +3,14 @@
     "description": "RocketMQ PHP SDK written with pure php code.",
     "type": "library",
     "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "huzhifeng",
-            "email": "huzhifeng@douyu.tv"
+    "authors": [{
+        "name": "huzhifeng",
+        "email": "huzhifeng@douyu.tv"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "rocketmq\\": "src/"
         }
-    ],
-    "require": {}
+    }
 }

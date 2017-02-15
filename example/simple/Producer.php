@@ -1,8 +1,5 @@
 <?php
-
-use RocketMQ\Client\Exception\MQClientException;
 use RocketMQ\Client\Producer\DefaultMQProducer;
-use RocketMQ\Client\Producer\SendResult;
 use RocketMQ\Common\Message\Message;
 
 $producer = new DefaultMQProducer("ProducerGroupName");
@@ -20,3 +17,4 @@ for ($i = 0; $i < 10000000; $i++) {
         echo $e->getMesssage() . PHP_EOL . $e->getTraceAsString();
     }
 }
+$producer->shutdown();

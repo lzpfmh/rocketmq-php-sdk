@@ -14,7 +14,7 @@ for ($i = 0; $i < 10000000; $i++) {
         $sendResult = $producer->send($msg);
         echo $sendResult;
     } catch (\Exception $e) {
-        echo $e->getMesssage() . PHP_EOL . $e->getTraceAsString();
+        echo $e->getMessage() . PHP_EOL . $e->getTraceAsString();
     }
 }
 $producer->shutdown();
